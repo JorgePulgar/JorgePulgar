@@ -126,10 +126,3 @@ Also:
 ### Let's talk
 
 **Hiring a Junior AI Engineer?** I'm available for full-time roles in Madrid or remote, building production LLM and ML systems on Azure that solve real business problems — not just demos. Reach me by [email](mailto:jorgepulgar.ai@gmail.com) or [LinkedIn](https://www.linkedin.com/in/jorge-pulgar-pacho-22b45233b/) — I reply within 24h.
-
----
-
-<p align="center">
-  <a href="https://github.com/JorgePulgar"><img src="https://github-readme-stats.vercel.app/api?username=JorgePulgar&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&theme=default" alt="GitHub stats"></a>
-  <a href="https://github.com/JorgePulgar"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JorgePulgar&layout=compact&hide_border=true&theme=default" alt="Top languages"></a>
-</p>
