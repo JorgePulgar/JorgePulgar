@@ -42,6 +42,10 @@ Plataforma RAG multi-tenant full-stack con **aislamiento estructural por índice
 Analizador en tiempo real de emociones faciales para llamadas de venta. Dos arquitecturas CNN comparadas end-to-end (CNN custom de 4 bloques vs MobileNetV2 fine-tuned, 63 % de accuracy en test) alimentando un **índice de receptividad** con ventana deslizante como señal de coaching. Ejecutable en el navegador vía **TensorFlow.js** — sin instalación, funciona en móvil o portátil. Servicio FastAPI + demo Streamlit comparten un único módulo de inferencia. **4 notebooks pedagógicos documentando cada fallo de entrenamiento y su solución.**
 > `Deep Learning` · `Computer Vision` · `TensorFlow` · `TensorFlow.js` · `CNN` · `Transfer Learning` · `FastAPI` · `Streamlit`
 
+#### [Invoice Insights — AI Invoice Analyzer](https://github.com/JorgePulgar/ai-invoice-analyzer) — *proyecto en equipo*
+SaaS full-stack para autónomos y pymes en España. Sube facturas en PDF, ejecuta **extracción estructurada con GPT-4o** vía Azure AI Foundry, valida el JSON y muestra un dashboard con KPIs, evolución mensual, top clientes/proveedores e IVA trimestral. **Construido en una semana con un compañero de equipo.** Diseño deliberado de extracción en una sola llamada (sin agentes) — más fiable, más barato y más fácil de depurar para datos estructurados de facturas.
+> `Azure AI Foundry` · `GPT-4o` · `Structured Extraction` · `React` · `TypeScript` · `Node.js` · `Express` · `SQLite`
+
 #### [FinBot — Fine-Tuning en Azure AI Foundry](https://github.com/JorgePulgar/FinBot-Fine-Tuning-with-Azure-AI-Foundry)
 Fine-tuning de `gpt-4o-mini` para actuar como asistente de educación financiera con **formato, tono y disclaimers legales consistentes**. Dataset JSONL propio, análisis de overfitting y debugging de comportamiento multi-cliente.
 > `Fine-tuning` · `Azure AI Foundry` · `gpt-4o-mini` · `JSONL` · `Evaluación`
@@ -50,13 +54,9 @@ Fine-tuning de `gpt-4o-mini` para actuar como asistente de educación financiera
 Aplicación web full-stack que combina **OCR de Azure Computer Vision** para extraer datos de menús a partir de fotos con un **modelo de clasificación scikit-learn** para predecir menús diarios. Backend en FastAPI, frontend en Next.js, persistencia en Supabase.
 > `Computer Vision` · `OCR` · `scikit-learn` · `FastAPI` · `Next.js` · `Supabase`
 
-#### [Vector Search con Azure AI Search](https://github.com/JorgePulgar/Embeddings-Vector-Database-with-Azure-AI-Search)
-Laboratorio práctico cubriendo cuatro modalidades de búsqueda (**Vector, Hybrid, Semantic, Semantic Hybrid**) más Scoring Profiles, construido con embeddings de Azure OpenAI y el SDK `azure-search-documents`.
-> `Vector Search` · `Embeddings` · `Azure AI Search` · `Fundamentos de RAG`
-
-#### [Prompt Engineering y Parametrización de LLMs](https://github.com/JorgePulgar/AI-Experiments--Prompt-Engineering-and-LLM-Parameterization)
-Experimentos prácticos con **6 técnicas de prompt engineering** y ajuste de parámetros del modelo (temperature, top_p, frequency/presence penalties) sobre `gpt-4o` vía Azure AI Foundry.
-> `Prompt Engineering` · `Azure AI Foundry` · `gpt-4o`
+#### [Housing Price — Red Neuronal vs Regresión Lineal](https://github.com/JorgePulgar/housing-price-neural-network)
+Pipeline ML completo (EDA → k-fold CV → ajuste de hiperparámetros → API REST en Flask) comparando una red neuronal contra una regresión lineal como baseline. **Conclusión: la regresión lineal gana en datasets pequeños.** Un caso de estudio sobre elegir la herramienta adecuada, no la más sofisticada.
+> `Deep Learning` · `Regression` · `TensorFlow` · `Keras` · `scikit-learn` · `Flask` · `K-Fold CV`
 
 ---
 
@@ -126,3 +126,10 @@ Además:
 ### Hablemos
 
 **¿Buscas un Junior AI Engineer?** Disponible para roles full-time en Madrid o remoto, construyendo sistemas LLM y ML en producción sobre Azure que resuelven problemas de negocio reales — no solo demos. Contáctame por [email](mailto:jorgepulgar.ai@gmail.com) o [LinkedIn](https://www.linkedin.com/in/jorge-pulgar-pacho-22b45233b/) — respondo en menos de 24h.
+
+---
+
+<p align="center">
+  <a href="https://github.com/JorgePulgar"><img src="https://github-readme-stats.vercel.app/api?username=JorgePulgar&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&theme=default&locale=es" alt="Estadísticas de GitHub"></a>
+  <a href="https://github.com/JorgePulgar"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JorgePulgar&layout=compact&hide_border=true&theme=default&locale=es" alt="Lenguajes más usados"></a>
+</p>

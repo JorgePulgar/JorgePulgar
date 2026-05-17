@@ -34,13 +34,17 @@ Most of what I build sits on the same stack: **Azure AI Foundry + Azure AI Searc
 
 ### Featured projects
 
-#### [RAG Assistants Platform](https://github.com/JorgePulgar/Rag-Assistants-Platform) 
+#### [RAG Assistants Platform](https://github.com/JorgePulgar/Rag-Assistants-Platform) — *flagship*
 Full-stack multi-tenant RAG platform with **structural index isolation** (one Azure AI Search index per assistant), conversational memory, LLM-based query rewriting, and verifiable citations. Hard "I don't know" fallback when retrieval is empty — no hallucinations by design. **~2.6k LOC Python + ~1.5k LOC TypeScript, 56 unit tests, built in 7 days.**
 > `Azure AI Foundry` · `Azure AI Search` · `FastAPI` · `React` · `TypeScript` · `Hybrid Search` · `Semantic Reranking`
 
 #### [Sales Receptivity CNN](https://github.com/JorgePulgar/sales-receptivity-cnn) — *[live web demo](https://jorgepulgar.github.io/sales-receptivity-cnn/)*
 Real-time facial-emotion analyzer for sales calls. Two CNN architectures benchmarked end-to-end (custom 4-block CNN vs fine-tuned MobileNetV2, 63 % test accuracy) feeding a **rolling receptivity index** as a coaching signal. Live in the browser via **TensorFlow.js** — no install, runs on phone or laptop. FastAPI service + Streamlit demo share one inference module. **4 pedagogical notebooks documenting every training failure and fix.**
 > `Deep Learning` · `Computer Vision` · `TensorFlow` · `TensorFlow.js` · `CNN` · `Transfer Learning` · `FastAPI` · `Streamlit`
+
+#### [Invoice Insights — AI Invoice Analyzer](https://github.com/JorgePulgar/ai-invoice-analyzer) — *team project*
+Full-stack SaaS for Spanish freelancers and SMEs. Uploads invoice PDFs, runs **structured GPT-4o extraction** via Azure AI Foundry, validates the JSON, and surfaces a dashboard with KPIs, monthly trends, top clients/suppliers, and quarterly VAT. **Built in one week with a teammate.** Deliberate single-call extraction (no agents) — more reliable, cheaper, and easier to debug for structured invoice data.
+> `Azure AI Foundry` · `GPT-4o` · `Structured Extraction` · `React` · `TypeScript` · `Node.js` · `Express` · `SQLite`
 
 #### [FinBot — Fine-Tuning on Azure AI Foundry](https://github.com/JorgePulgar/FinBot-Fine-Tuning-with-Azure-AI-Foundry)
 Fine-tuned `gpt-4o-mini` to act as a financial education assistant with **consistent format, tone, and legal disclaimers**. Custom JSONL dataset, overfitting analysis, multi-client behavior debugging.
@@ -50,13 +54,9 @@ Fine-tuned `gpt-4o-mini` to act as a financial education assistant with **consis
 Full-stack web app combining **Azure Computer Vision OCR** to extract menu data from photos with a **scikit-learn classification model** to predict daily menus. FastAPI backend, Next.js frontend, Supabase persistence.
 > `Computer Vision` · `OCR` · `scikit-learn` · `FastAPI` · `Next.js` · `Supabase`
 
-#### [Vector Search with Azure AI Search](https://github.com/JorgePulgar/Embeddings-Vector-Database-with-Azure-AI-Search)
-Hands-on lab covering four search modalities (**Vector, Hybrid, Semantic, Semantic Hybrid**) plus Scoring Profiles, built with Azure OpenAI embeddings and the `azure-search-documents` SDK.
-> `Vector Search` · `Embeddings` · `Azure AI Search` · `RAG Foundations`
-
-#### [Prompt Engineering & LLM Parameterization](https://github.com/JorgePulgar/AI-Experiments--Prompt-Engineering-and-LLM-Parameterization)
-Practical experiments with **6 prompt engineering techniques** and model parameter tuning (temperature, top_p, frequency/presence penalties) on `gpt-4o` via Azure AI Foundry.
-> `Prompt Engineering` · `Azure AI Foundry` · `gpt-4o`
+#### [Housing Price — Neural Network vs Linear Regression](https://github.com/JorgePulgar/housing-price-neural-network)
+Full ML pipeline (EDA → k-fold CV → hyperparameter tuning → Flask REST API) comparing a neural network against a linear regression baseline. **Finding: linear regression wins on small datasets.** A case study in choosing the right tool, not the fanciest one.
+> `Deep Learning` · `Regression` · `TensorFlow` · `Keras` · `scikit-learn` · `Flask` · `K-Fold CV`
 
 ---
 
@@ -119,10 +119,17 @@ Building an AI-powered system that parses public tender documents (*licitaciones
 
 Also:
 - Designing a multi-agent system for automated job application management
-- **Open to Junior AI Engineer roles** in Madrid or remote 
+- **Open to Junior AI Engineer roles** in Madrid or remote — let's talk
 
 ---
 
 ### Let's talk
 
 **Hiring a Junior AI Engineer?** I'm available for full-time roles in Madrid or remote, building production LLM and ML systems on Azure that solve real business problems — not just demos. Reach me by [email](mailto:jorgepulgar.ai@gmail.com) or [LinkedIn](https://www.linkedin.com/in/jorge-pulgar-pacho-22b45233b/) — I reply within 24h.
+
+---
+
+<p align="center">
+  <a href="https://github.com/JorgePulgar"><img src="https://github-readme-stats.vercel.app/api?username=JorgePulgar&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&theme=default" alt="GitHub stats"></a>
+  <a href="https://github.com/JorgePulgar"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JorgePulgar&layout=compact&hide_border=true&theme=default" alt="Top languages"></a>
+</p>
