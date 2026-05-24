@@ -38,6 +38,10 @@ Most of what I build sits on the same stack: **Azure AI Foundry + Azure AI Searc
 Full-stack multi-tenant RAG platform with **structural index isolation** (one Azure AI Search index per assistant), conversational memory, LLM-based query rewriting, and verifiable citations. Hard "I don't know" fallback when retrieval is empty — no hallucinations by design. **~2.6k LOC Python + ~1.5k LOC TypeScript, 56 unit tests, built in 7 days.**
 > `Azure AI Foundry` · `Azure AI Search` · `FastAPI` · `React` · `TypeScript` · `Hybrid Search` · `Semantic Reranking`
 
+#### [Fraud Autoencoder](https://github.com/JorgePulgar/fraud-autoencoder) — *[live browser demo](https://jorgepulgar.github.io/fraud-autoencoder/)*
+Unsupervised credit-card fraud detection via reconstruction-error autoencoder. **Chosen knowing supervised models score higher** — matches the realistic production scenario where fraud labels lag fraud patterns. PR-AUC ~3× the Isolation Forest baseline, bracketed by a Logistic Regression upper bound. **Exported to ONNX with <1e-5 numerical verification** and served from the same model file in the browser. Data-leakage prevention enforced via in-code assertions.
+> `Deep Learning` · `Anomaly Detection` · `PyTorch` · `ONNX` · `Unsupervised Learning` · `TensorFlow.js` · `React`
+
 #### [Sales Receptivity CNN](https://github.com/JorgePulgar/sales-receptivity-cnn) — *[live web demo](https://jorgepulgar.github.io/sales-receptivity-cnn/)*
 Real-time facial-emotion analyzer for sales calls. Two CNN architectures benchmarked end-to-end (custom 4-block CNN vs fine-tuned MobileNetV2, 63 % test accuracy) feeding a **rolling receptivity index** as a coaching signal. Live in the browser via **TensorFlow.js** — no install, runs on phone or laptop. FastAPI service + Streamlit demo share one inference module. **4 pedagogical notebooks documenting every training failure and fix.**
 > `Deep Learning` · `Computer Vision` · `TensorFlow` · `TensorFlow.js` · `CNN` · `Transfer Learning` · `FastAPI` · `Streamlit`
@@ -54,10 +58,6 @@ Fine-tuned `gpt-4o-mini` to act as a financial education assistant with **consis
 Full-stack web app combining **Azure Computer Vision OCR** to extract menu data from photos with a **scikit-learn classification model** to predict daily menus. FastAPI backend, Next.js frontend, Supabase persistence.
 > `Computer Vision` · `OCR` · `scikit-learn` · `FastAPI` · `Next.js` · `Supabase`
 
-#### [Housing Price — Neural Network vs Linear Regression](https://github.com/JorgePulgar/housing-price-neural-network)
-Full ML pipeline (EDA → k-fold CV → hyperparameter tuning → Flask REST API) comparing a neural network against a linear regression baseline. **Finding: linear regression wins on small datasets.** A case study in choosing the right tool, not the fanciest one.
-> `Deep Learning` · `Regression` · `TensorFlow` · `Keras` · `scikit-learn` · `Flask` · `K-Fold CV`
-
 ---
 
 ### Tech stack
@@ -69,8 +69,10 @@ Full ML pipeline (EDA → k-fold CV → hyperparameter tuning → Flask REST API
 ![Gemini](https://img.shields.io/badge/Gemini-8E75B2?style=flat&logo=googlegemini&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat&logo=tensorflow&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white)
 ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat&logo=opencv&logoColor=white)
+![ONNX](https://img.shields.io/badge/ONNX-005CED?style=flat&logo=onnx&logoColor=white)
 
 **Azure**
 ![Azure](https://img.shields.io/badge/Microsoft_Azure-0078D4?style=flat&logo=microsoftazure&logoColor=white)
@@ -126,10 +128,3 @@ Also:
 ### Let's talk
 
 **Hiring a Junior AI Engineer?** I'm available for full-time roles in Madrid or remote, building production LLM and ML systems on Azure that solve real business problems — not just demos. Reach me by [email](mailto:jorgepulgar.ai@gmail.com) or [LinkedIn](https://www.linkedin.com/in/jorge-pulgar-pacho-22b45233b/) — I reply within 24h.
-
----
-
-<p align="center">
-  <a href="https://github.com/JorgePulgar"><img src="https://github-readme-stats.vercel.app/api?username=JorgePulgar&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&theme=default" alt="GitHub stats"></a>
-  <a href="https://github.com/JorgePulgar"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JorgePulgar&layout=compact&hide_border=true&theme=default" alt="Top languages"></a>
-</p>

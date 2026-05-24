@@ -38,6 +38,10 @@ La mayor parte de lo que construyo se apoya en el mismo stack: **Azure AI Foundr
 Plataforma RAG multi-tenant full-stack con **aislamiento estructural por índice** (un índice de Azure AI Search por asistente), memoria conversacional, reescritura de queries con LLM y citas verificables. Fallback estricto "no lo sé" cuando el retrieval está vacío — sin alucinaciones por diseño. **~2.6k LOC de Python + ~1.5k LOC de TypeScript, 56 tests unitarios, construido en 7 días.**
 > `Azure AI Foundry` · `Azure AI Search` · `FastAPI` · `React` · `TypeScript` · `Hybrid Search` · `Semantic Reranking`
 
+#### [Fraud Autoencoder](https://github.com/JorgePulgar/fraud-autoencoder) — *[demo en el navegador](https://jorgepulgar.github.io/fraud-autoencoder/)*
+Detección no supervisada de fraude en tarjetas de crédito mediante autoencoder con error de reconstrucción. **Elegido a sabiendas de que los modelos supervisados puntúan más alto** — refleja el escenario real de producción donde las etiquetas de fraude van por detrás de los patrones de fraude. PR-AUC ~3× el baseline de Isolation Forest, acotado por una Logistic Regression como cota superior. **Exportado a ONNX con verificación numérica <1e-5** y servido desde el mismo archivo de modelo en el navegador. Prevención de data leakage forzada mediante asserts en el código.
+> `Deep Learning` · `Anomaly Detection` · `PyTorch` · `ONNX` · `Unsupervised Learning` · `TensorFlow.js` · `React`
+
 #### [Sales Receptivity CNN](https://github.com/JorgePulgar/sales-receptivity-cnn) — *[demo web en vivo](https://jorgepulgar.github.io/sales-receptivity-cnn/)*
 Analizador en tiempo real de emociones faciales para llamadas de venta. Dos arquitecturas CNN comparadas end-to-end (CNN custom de 4 bloques vs MobileNetV2 fine-tuned, 63 % de accuracy en test) alimentando un **índice de receptividad** con ventana deslizante como señal de coaching. Ejecutable en el navegador vía **TensorFlow.js** — sin instalación, funciona en móvil o portátil. Servicio FastAPI + demo Streamlit comparten un único módulo de inferencia. **4 notebooks pedagógicos documentando cada fallo de entrenamiento y su solución.**
 > `Deep Learning` · `Computer Vision` · `TensorFlow` · `TensorFlow.js` · `CNN` · `Transfer Learning` · `FastAPI` · `Streamlit`
@@ -54,10 +58,6 @@ Fine-tuning de `gpt-4o-mini` para actuar como asistente de educación financiera
 Aplicación web full-stack que combina **OCR de Azure Computer Vision** para extraer datos de menús a partir de fotos con un **modelo de clasificación scikit-learn** para predecir menús diarios. Backend en FastAPI, frontend en Next.js, persistencia en Supabase.
 > `Computer Vision` · `OCR` · `scikit-learn` · `FastAPI` · `Next.js` · `Supabase`
 
-#### [Housing Price — Red Neuronal vs Regresión Lineal](https://github.com/JorgePulgar/housing-price-neural-network)
-Pipeline ML completo (EDA → k-fold CV → ajuste de hiperparámetros → API REST en Flask) comparando una red neuronal contra una regresión lineal como baseline. **Conclusión: la regresión lineal gana en datasets pequeños.** Un caso de estudio sobre elegir la herramienta adecuada, no la más sofisticada.
-> `Deep Learning` · `Regression` · `TensorFlow` · `Keras` · `scikit-learn` · `Flask` · `K-Fold CV`
-
 ---
 
 ### Stack técnico
@@ -69,8 +69,10 @@ Pipeline ML completo (EDA → k-fold CV → ajuste de hiperparámetros → API R
 ![Gemini](https://img.shields.io/badge/Gemini-8E75B2?style=flat&logo=googlegemini&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat&logo=tensorflow&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white)
 ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat&logo=opencv&logoColor=white)
+![ONNX](https://img.shields.io/badge/ONNX-005CED?style=flat&logo=onnx&logoColor=white)
 
 **Azure**
 ![Azure](https://img.shields.io/badge/Microsoft_Azure-0078D4?style=flat&logo=microsoftazure&logoColor=white)
@@ -126,10 +128,3 @@ Además:
 ### Hablemos
 
 **¿Buscas un Junior AI Engineer?** Disponible para roles full-time en Madrid o remoto, construyendo sistemas LLM y ML en producción sobre Azure que resuelven problemas de negocio reales — no solo demos. Contáctame por [email](mailto:jorgepulgar.ai@gmail.com) o [LinkedIn](https://www.linkedin.com/in/jorge-pulgar-pacho-22b45233b/) — respondo en menos de 24h.
-
----
-
-<p align="center">
-  <a href="https://github.com/JorgePulgar"><img src="https://github-readme-stats.vercel.app/api?username=JorgePulgar&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&theme=default&locale=es" alt="Estadísticas de GitHub"></a>
-  <a href="https://github.com/JorgePulgar"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JorgePulgar&layout=compact&hide_border=true&theme=default&locale=es" alt="Lenguajes más usados"></a>
-</p>
