@@ -10,7 +10,7 @@
 
 <p align="center">
   <b>Junior AI Engineer</b> · Construyendo aplicaciones con LLMs sobre Azure<br>
-  <sub>Madrid, España · Abierto a oportunidades como Junior AI Engineer</sub>
+  <sub>Con base en Madrid · Abierto a oportunidades en toda Europa (remoto o relocation)</sub>
 </p>
 
 <p align="center">
@@ -121,10 +121,10 @@ Construyendo un sistema basado en IA que analiza documentos de licitaciones púb
 
 Además:
 - Diseñando un sistema multi-agente para automatizar la gestión de candidaturas
-- **Abierto a oportunidades como Junior AI Engineer** en Madrid o remoto — hablamos
+- **Abierto a oportunidades como Junior AI Engineer** — en toda Europa, remoto o relocation. Con base en Madrid.
 
 ---
 
 ### Hablemos
 
-**¿Buscas un Junior AI Engineer?** Disponible para roles full-time en Madrid o remoto, construyendo sistemas LLM y ML en producción sobre Azure que resuelven problemas de negocio reales — no solo demos. Contáctame por [email](mailto:jorgepulgar.ai@gmail.com) o [LinkedIn](https://www.linkedin.com/in/jorge-pulgar-pacho-22b45233b/) — respondo en menos de 24h.
+**¿Buscas un Junior AI Engineer?** Estoy en Madrid y disponible para roles full-time en toda Europa — remoto o relocation. Construyo sistemas LLM y ML en producción sobre Azure que resuelven problemas de negocio reales, no solo demos. Contáctame por [email](mailto:jorgepulgar.ai@gmail.com) o [LinkedIn](https://www.linkedin.com/in/jorge-pulgar-pacho-22b45233b/) — respondo en menos de 24h.

@@ -10,7 +10,7 @@
 
 <p align="center">
   <b>Junior AI Engineer</b> · Building LLM-powered applications on Azure<br>
-  <sub>Madrid, Spain · Open to Junior AI Engineer roles</sub>
+  <sub>Based in Madrid · Open to roles across Europe (remote or relocation)</sub>
 </p>
 
 <p align="center">
@@ -121,10 +121,10 @@ Building an AI-powered system that parses public tender documents (*licitaciones
 
 Also:
 - Designing a multi-agent system for automated job application management
-- **Open to Junior AI Engineer roles** in Madrid or remote — let's talk
+- **Open to Junior AI Engineer roles** — Europe-wide, remote or relocation. Based in Madrid.
 
 ---
 
 ### Let's talk
 
-**Hiring a Junior AI Engineer?** I'm available for full-time roles in Madrid or remote, building production LLM and ML systems on Azure that solve real business problems — not just demos. Reach me by [email](mailto:jorgepulgar.ai@gmail.com) or [LinkedIn](https://www.linkedin.com/in/jorge-pulgar-pacho-22b45233b/) — I reply within 24h.
+**Hiring a Junior AI Engineer?** I'm based in Madrid and available for full-time roles across Europe — remote or relocation. I build production LLM and ML systems on Azure that solve real business problems, not just demos. Reach me by [email](mailto:jorgepulgar.ai@gmail.com) or [LinkedIn](https://www.linkedin.com/in/jorge-pulgar-pacho-22b45233b/) — I reply within 24h.
